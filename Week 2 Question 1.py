@@ -20,6 +20,7 @@ PSEUDO CODE
 '''
 
 import sys
+
 user = input("input number ")
 number = int(user)
 

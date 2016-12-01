@@ -8,7 +8,7 @@ PSEUDO CODE
 
  VOWELREMOVER [x]
    IF length of [x] is EQUAL TO 0 THEN
-      return [x]
+      RETURN [x]
    ELSE IF "aeiouAEIOU" found in first letter of [x] THEN
        return letter at start of [x]
     return [x] AND APPEND string with start of letter in [x]   
@@ -28,12 +28,12 @@ Skip first character and process rest
 Return first character and process rest
 '''
 
-def VowelRemover (x):
-    if len(x) == 0:
-        return x
-    elif x[0] in ("aeiouAEIOU"):
-        return VowelRemover(x[1:])
-    return x[0] + VowelRemover(x[1:])
+def VowelRemover (sentence):
+    if len(sentence) == 0:
+        return sentence
+    elif sentence[0] in ("aeiouAEIOU"):
+        return VowelRemover(sentence[1:])
+    return sentence[0] + VowelRemover(sentence[1:])
 
 print(VowelRemover(sentence))
 

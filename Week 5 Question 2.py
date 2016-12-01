@@ -48,5 +48,6 @@ if __name__ == '__main__':
     l.insert(l.head,Node3)
     l.display()
     l.ListRemove(Node2)
+    print("After Node Removed")
     l.display()
     

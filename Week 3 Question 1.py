@@ -8,21 +8,23 @@ A <- User Input
 B <- Function to split string at spacing stored as a List
 C <- Empty List
 
-RECURSIVEF[x,y]
+ RECURSIVEF[x,y]
     IF [x] is empty THEN
         OUTPUT ("No Text Entered")
-        return [y]
+        RETURN [y]
     ELSE
         [y]appended to read next element in the List from the end
         Last element in [x]List is removed
         return back to the function [x,y]
-CALL RECURSIVEF
+        
+ CALL RECURSIVEF
 OUTPUT [C]
 
 
 '''
 
 import sys
+
 String = input("Enter text here ")
 Listing = String.split()
 Reversed = []

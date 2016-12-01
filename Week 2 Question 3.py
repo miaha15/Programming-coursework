@@ -141,6 +141,7 @@ R <- A1 + A3
 '''
 
 #What is the run-time (BigO notation?)
+
 '''
 I can see that my program had a notation of 5n +6 + 7n^2 + 2n^3
 We can ignore the +6, 5n and 7n^2 as they have a smaller magnitude in comparison to 2n^3
