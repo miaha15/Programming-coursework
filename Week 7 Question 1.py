@@ -1,10 +1,6 @@
 'https://www.youtube.com/watch?v=HDUzBEG1GlA'
 'http://www.afterhoursprogramming.com/tutorial/Python/Writing-to-Files/'
 
-from sys import argv
-
-filename = argv
-
 class Vertex:
 
     def __init__(self):
@@ -41,6 +37,10 @@ class Graph(Vertex):
                 for edge in self.dictionary[Queue]:
                     self.queue.insert(0,edge)
         print (self.visited)
+        file = open("BreadthFirst.txt", "w")
+        file.write(str(self.visited))
+        file.close()
+        return self.visited
        
 
     def DepthFirstSearch(self, vertex):
@@ -56,16 +56,11 @@ class Graph(Vertex):
                 self.visited.append(Stack)
                 for edge in self.dictionary[Stack]:
                     self.stack.append(edge)
+                file = open("DepthFirst.txt", "w")
+                file.write(str(self.visited))
+                file.close()
         print(self.visited)
         return(self.visited)
-
-    def createfile(self):
-        target = open(filename, 'w')
-        target.truncate()
-        target.write(self)
-        target.write("\n")
-        target.write(self)
-        target.close() 
         
 
 if __name__ == '__main__':
