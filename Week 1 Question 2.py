@@ -26,16 +26,16 @@ If a negative number inputted then it will output a message saying so.
 'Break' insures that the line previous, once executed, instantly returns
 Back to the function
 '''
-def factorialCalc (x):
+def factorialCalc (number):
     
-    if x==1:
+    if number == 1:
         return 1 #1
-    elif x==0:
+    elif number == 0:
         return 0 #1
-    elif x<0:
+    elif number < 0:
         return print("Must be a positive number") #2
     else:
-        return x * factorialCalc(x-1) #1
+        return number * factorialCalc(number-1) #1
 
 Carry = factorialCalc(Factorial) #1
 print ('Factorial of' ,Factorial, 'is:' ,Carry) #1
@@ -44,8 +44,8 @@ print ('Factorial of' ,Factorial, 'is:' ,Carry) #1
 def TrailingZeros(y):
     string = str(Carry)#1
     increments = 0 #1
-    for i in string [::-1]: #n
-        if i == "0": #1n
+    for element in string [::-1]: #n
+        if element == "0": #1n
             increments = increments + 1 #1n
         else:
             print('Number of trailing zeros:' ,increments)#1

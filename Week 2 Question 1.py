@@ -32,7 +32,7 @@ sqrt * sqrt is just multiplying itself by itself
 %d gets rid of the decimals while %0.3f counts to 3 decimal places
 '''
 
-def Square(x):
+def Square(inputted):
     sqrt = number ** 0.5
     intsqrt = int(sqrt)
     answer = int(sqrt) * int(sqrt)
