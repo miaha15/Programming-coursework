@@ -51,6 +51,31 @@ if ___name___ EQUALS '__main__' THEN
         G.SHOWGRAPH()
 '''
 
+'''
+dictionary is set to an empty tuple when first called during the instantiation
+When adding a vertex, if its not in the dictionary it will get added
+When adding an edge, it will add the edge to the vertex dictionary and add the
+vertex to the edge dictionary to create a link/relationship.
+
+for each value in the dictionary it will print all associated nodes to that vertex
+
+BFS uses a QUEUE of vertices that have been found and also the ones that havent
+been visited yet and then constantly visits the front of the vertex of the queue
+finding its connecting neighbours and adding them to the end of the queue
+
+AKA vertex found sooner are visited sooner.
+
+DFS uses a STACK, new vertices are visited straight away and vertices that were
+found previously are only returned back to when the new vertices have been visited.
+This makes it so that it it searches the path one vertice before checking other
+vertice' paths.
+
+when saving the traversed nodes, a new file is created with the given name where it
+stores the visited vertices by writing them in the text file.
+This text file is written over if it is called again by the new traversed nodes.
+
+'''
+
 import sys
 
 class Vertex:
