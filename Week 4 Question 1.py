@@ -40,6 +40,24 @@ H <- user input
  OUTPUT BINARYSEARCH[M,H,L]
 
 '''
+
+'''
+User creates a list by entering start and end of list and what it goes up in
+User then enters a Low and High interval Values to be searched within
+Boolean is set to false at the start
+Midpoint of the list is first found as a starting point
+If midpointer is smaller than high interval and bigger than low interval
+then we know there are values within the range and returns true
+else if midpointer is equal to or higher than the high interval then
+end of the list is reduced by 1 position to change the position of the midpointer
+by 1 position to the left
+If the midpointer is smaller than or equal to than the low interval then
+start position is increased by one to move the pointer to the right by 1 place
+once the condition of the while loop is reached then it will return the final
+boolean value
+'''
+
+
 import sys
 
 Start = int(input("Enter the starting number of your list: ")) #1

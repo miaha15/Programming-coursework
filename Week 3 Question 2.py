@@ -23,6 +23,18 @@ PRIMECHECKER[A]
 
 '''
 
+'''
+Number entered is first checked to see if its a 1, if it is then it returns false
+If number is equal to 2 then it returns true
+If number is 3 then it returns true
+Number is divided by itself and numbers below it to check that remainder
+isnt 0 to indicate it not being a prime
+function is recursivly called, each time incrementing divisor by +1
+Divisor starts at 2 as we know that 1 and the number itself is fully divisable
+
+A prime number is a number that is only fully divisable by itself and 1
+'''
+
 CheckPrime = int(input("Enter number here: "))
 
 def primeChecker(number, divisor = 2):

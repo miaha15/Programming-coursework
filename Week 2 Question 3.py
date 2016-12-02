@@ -69,11 +69,19 @@ repeat
  
 '''
 
-'''ADDING SUBTRACTING AND MULTIPLYING MATRIXES'''
+'''
+Result of each function is stored in a seperate variable
+Each variable is called to its appropriate function when needed
+*2 was achieved by adding the matrix to itself which is the same as *2
+The end result matrix is outputted line by line for the user
+Matrix and result matrix are all global so that they are available to all
+functions
+
+'''
 
 import sys
 
-MatrixOne = [[10,20,10],[0,10,0],[20,30,40]] #1
+MatrixOne = [[10,20,10],[9,10,9],[20,30,40]] #1
 MatrixTwo = [[20,50,10],[60,70,10],[10,80,10]] #1
 
 ResultMatrix1 = [[0,0,0],[0,0,0],[0,0,0]]#1
@@ -147,5 +155,5 @@ I can see that my program had a notation of 5n +6 + 7n^2 + 2n^3
 We can ignore the +6, 5n and 7n^2 as they have a smaller magnitude in comparison to 2n^3
 2n^3 has a larger magnitude and so is more important and significant
 When it comes to program efficiency
-On a graph 2n^3 is equivalent to the O(n^3) quadratic graph
+On a graph 2n^3 is equivalent to the O(n^3)
 '''

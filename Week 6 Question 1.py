@@ -1,3 +1,15 @@
+'''
+while the size of the variable Store is greater than 0 then it checks
+to see if the current node is not empty.
+While the theres a node on the left hand side then it will add that node to the
+list stored in the variable called Store and make the current node that node.
+If there is no node on the left hand side then it will check the Stack if its
+not empty, if it isnt then it will print values in the stack and add the node
+on the right hand side.
+'''
+
+import sys
+
 class BinTreeNode(object):
     def __init__(self, value):
         self.value=value
@@ -57,3 +69,5 @@ if __name__ == '__main__':
   tree_insert(t,4)
   tree_insert(t,11)
   in_order(t)
+
+sys.exit()

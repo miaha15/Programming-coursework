@@ -7,7 +7,7 @@
 Variable stores the size of the list
 Picks a random item from the list
 Swaps the items in a list to create a new rearranged list
-Returns the final value of x back to the function    
+Returns the final value of alist back to the function    
 Calls the function along with the list contents
 Prints the new randomly rearranged list
 '''
@@ -15,12 +15,12 @@ Prints the new randomly rearranged list
 import sys
 import random
 
-def Shuffle(x):
-    size = len(x)#1
+def Shuffle(alist):
+    size = len(alist)#1
     for counter in range (size): #n
         RandomShuffle1 = random.randrange(0,size) #1n
         RandomNShuffle2 = random.randrange(0,size) #1n
-        x[RandomShuffle1],x[RandomNShuffle2] = x[RandomNShuffle2],x[RandomShuffle1]#1n
+        alist[RandomShuffle1],alist[RandomNShuffle2] = alist[RandomNShuffle2],alist[RandomShuffle1]#1n
     return x #1
 
 List = [1,8,9,7,10,20,44] #1

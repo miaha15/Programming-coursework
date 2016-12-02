@@ -20,7 +20,14 @@ C <- Empty List
  CALL RECURSIVEF
 OUTPUT [C]
 
+'''
 
+'''
+.split divides a string at the spacing and stored in Listing
+List is read backwards and displayed for each element read and returned back
+to the function
+This is done by starting to read from the end of the list to the front
+When returned back it is then  outputted for the user to see
 '''
 
 import sys
@@ -38,8 +45,8 @@ def RecursiveF(UserList, EmptyList):
         UserList.pop(-1) #1
         return RecursiveF(UserList, EmptyList) #1
 
-RecursiveF(Listing, Reversed) #1
-print (Reversed) #1
+print(RecursiveF(Listing, Reversed)) #1
+
 
 sys.exit()
 
