@@ -1,6 +1,58 @@
 'https://www.youtube.com/watch?v=HDUzBEG1GlA'
 'http://www.afterhoursprogramming.com/tutorial/Python/Writing-to-Files/'
 
+'''PSEUDO CODE
+
+procedure VERTEX
+
+    __INIT__
+        dictionary <- {}
+
+    ADDVERTEX [V]
+        IF V not in dictionary THEN
+            dictionary[V] <- []
+
+    ADDEDGE [V,E]
+        dictionary[V] add to the end [E]
+        dictionary[E] add to the end [V]
+
+procedure GRAPH [VERTEX]
+
+    SHOWGRAPH
+        OUTPUT message
+
+        FOR i in dictionary DO
+            OUTPUT[i, dictionary[i]]
+
+if ___name___ EQUALS '__main__' THEN
+
+        G <- GRAPH()
+
+        G.ADDVERTEX['A']
+        G.ADDVERTEX['B']
+        .
+        .
+        .
+        .
+        .
+        .
+        .
+        G.ADDEDGE['A', 'B']
+        .
+        .
+        .
+        .
+        .
+        .
+        .
+
+        OUTPUT message
+
+        G.SHOWGRAPH()
+'''
+
+import sys
+
 class Vertex:
 
     def __init__(self):
@@ -101,3 +153,5 @@ if __name__ == '__main__':
 
     print("Breadth First Search for C")
     G.BreadthFirstSearch('C')
+
+sys.exit()
