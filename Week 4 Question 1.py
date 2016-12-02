@@ -103,4 +103,5 @@ We can ignore the +10 as it has a smaller magnitude in comparison to 7n
 7n has a larger magnitude and so is more important and significant
 When it comes to program efficiency
 On a graph 7n is equivalent to the O(n) Linear graph
+worst case is O(logn)
 '''
